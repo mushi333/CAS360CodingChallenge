@@ -14,9 +14,17 @@ public class GameEngine extends Engine {
     private Bike bike;
     private boolean bikeIsPlaced = false;
     HashMap<String, String> commands;
+    private static GameEngine engine;
 
     /** Constructs a new GameEngine object. */
-    public GameEngine() {}
+    private GameEngine() {}
+
+    public static GameEngine getInstance() {
+        if (engine == null) {
+            engine = new GameEngine();
+        }
+        return engine;
+    }
 
     /**
      * Starts the game using commands from a file.

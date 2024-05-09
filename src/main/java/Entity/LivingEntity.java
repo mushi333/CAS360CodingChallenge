@@ -4,7 +4,7 @@ import Engine.Constants;
 import Map.Map;
 
 /** The LivingEntity class represents a living entity in the game that can perform actions. */
-public class LivingEntity extends Entity implements Action {
+public abstract class LivingEntity extends Entity implements Action {
     /**
      * Constructs a new LivingEntity object.
      *

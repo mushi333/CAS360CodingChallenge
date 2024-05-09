@@ -26,7 +26,7 @@ class TestEntity {
         direction = Constants.NORTH;
         speed = Constants.BIKE_SPEED;
         map = new DefaultMap(mapSize);
-        bike = new Bike(xPosition, yPosition, direction, map, speed);
+        bike = new Bike(xPosition, yPosition, direction, map, Constants.BIKE_SPEED);
     }
 
     @Test

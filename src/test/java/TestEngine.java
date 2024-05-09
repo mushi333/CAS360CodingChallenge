@@ -15,7 +15,7 @@ class TestEngine {
     public void setup() {
         outputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outputStream));
-        engine = new GameEngine();
+        engine = GameEngine.getInstance();
     }
 
     @AfterEach
