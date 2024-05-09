@@ -107,9 +107,9 @@ public class GameEngine extends Engine {
      * Main method to start the game engine.
      *
      * @param args the command-line arguments. The first argument can be a file name.
-     * @throws Exception if an error occurs during execution.
+     * @throws FileNotFoundException if the specified file is not found.
      */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws FileNotFoundException {
         GameEngine engine = new GameEngine();
         try {
             if (args.length > 0) {
